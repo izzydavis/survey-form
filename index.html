@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Izzy's Pizza</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&display=swap" rel="stylesheet">
     </head>
+    <div class="square">
+    </div>
     <body>
-        <h1 id="title">Izzy's Pizza</h1>
+        <div class="square">
+            <h1 id="title">Izzy's Pizza</h1>
         <p id="description">Here at <i>Izzy's Pizza</i>, we like to make sure we are giving our customers what they want. 
            So, because of the recent hype, we now have a weekly newsletter to feed all of your greasy pizza dreams. 
            Fill out the form below to get access to this delicious newsletter!</p>
-
+       
         <form id="survey-form">
-            <input type="text" placeholder="name">
-            <input type="email" placeholder="email">
-            <input id="number" type="number" min="1" max="100" placeholder="age">
-            <label for="pizza">Favorite topping:
-                <select name="pizza">
-                    <option value="pepperoni">Pepperoni</option>
-                    <option value="cheese">Cheese</option>
-                    <option value="sausage">Sausage</option>
-                    <option value="other">Other</option>
-                  </select>
+            <h1>Personal Info</h1>
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" placeholder="John Doe" id="name" required>
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" placeholder="johndoe@izzypizza.com" id="email" required>
+                <br>
+                <label for="number" id="number-label">Age</label>
+                <input id="number" type="number" min="1" max="100" placeholder="18+" required>
+                <br>
+            </div>
+            <br>
+
+            <h1>How do you get your pizza?</h1>
+            <label for="delivery">
+                <select name="delivery" id="dropdown">
+                    <option value="pickUp">Pick Up</option>
+                    <option value="dineIn">Dine In</option>
+                    <option value="home">Home Delivery</option>
+                </select>
             </label>
-            <p>Any comments, questions or concens</p>
+            <br>
+            <div id="radio">
+                <h1>How did you hear about us?</h1>
+                <label for="social1">Instagram</label>
+                <input type="radio" name="social" value="instagram">
+
+                <label for="social2">Twitter</label>
+                <input type="radio" name="social" value="twitter">
+
+                <label for="social3">From a friend</label>
+                <input type="radio" name="social" value="friend">
+
+                <label for="social4">In a commercial</label>
+                <input type="radio" name="social" value="commercial">
+
+                <label for="social5">Other</label>
+                <input type="radio" name="social" value="other">
+            </div>
+            
+            <div>
+                <h1>Favorite toppings?</h1>
+                <label for="topping1">Pepperoni</label>
+                <input type="checkbox" value="instagram">
+
+                <label for="topping2">Cheese</label>
+                <input type="checkbox" value="cheese">
+
+                <label for="topping3">Pineapple</label>
+                <input type="checkbox" value="pineapple">
+
+                <label for="topping4">Sausage</label>
+                <input type="checkbox" value="commercial">
+
+                <label for="topping5">Mushrooms</label>
+                <input type="checkbox" value="mushrooms">
+
+                <label for="topping5">Chicken</label>
+                <input type="checkbox" value="chicken">
+            </div>
+
+            <h1>Comments, questions or concens?</h1>
             <textarea></textarea>
-            <input type="submit"></button>
-        </form>
+            <input type="submit" id="submit"></button>
+            </form>
+        
+        </div>
+        
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
 </html>
+
+<!--
+
+#name {
+
+}
+
+#email {
+
+}
+
+#number {
+
+}
+
+#name-label {
+
+}
+
+#email-label {
+
+}
+
+#number-label {
+
+}
+
+#dropdown {
+
+}
+-->
