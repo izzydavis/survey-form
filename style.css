@@ -1,0 +1,42 @@
+#title {
+font-family: 'Dancing Script', cursive;
+color: black;
+display: flex;
+justify-content: center;
+font-size: 80px;
+}
+
+#description {
+font-size: 22px;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+#survey-form {
+
+}
+
+#number {
+
+}
+
+
+#name-label {
+
+}
+
+#email-label {
+
+}
+
+#number-label {
+
+}
+
+#dropdown {
+
+}
+
+#submit {
+
+}
