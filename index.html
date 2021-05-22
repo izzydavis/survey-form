@@ -9,25 +9,26 @@
     </head>
     <div class="square">
     </div>
+    
     <body>
         <div class="square">
             <h1 id="title">Izzy's Pizza</h1>
         <p id="description">Here at <i>Izzy's Pizza</i>, we like to make sure we are giving our customers what they want. 
            So, because of the recent hype, we now have a weekly newsletter to feed all of your greasy pizza dreams. 
-           Fill out the form below to get access to this delicious newsletter!</p>
+           Complete the survey below to get access to this delicious newsletter!</p>
        
         <form id="survey-form">
             <h1>Personal Info</h1>
             <div>
-                <label for="name" id="name-label">Name</label>
+                <label for="name" id="name-label">Name:</label>
                 <input type="text" placeholder="John Doe" id="name" required>
-                <br>
-                <label for="email" id="email-label">Email</label>
+        
+                <label for="email" id="email-label">Email:</label>
                 <input type="email" placeholder="johndoe@izzypizza.com" id="email" required>
-                <br>
-                <label for="number" id="number-label">Age</label>
-                <input id="number" type="number" min="1" max="100" placeholder="18+" required>
-                <br>
+                
+                <label for="number" id="number-label">Age: (optional)</label>
+                <input id="number" type="number" min="1" max="100" placeholder="18" required>
+              
             </div>
             <br>
 
@@ -42,41 +43,46 @@
             <br>
             <div id="radio">
                 <h1>How did you hear about us?</h1>
-                <label for="social1">Instagram</label>
-                <input type="radio" name="social" value="instagram">
+                <label for="social1">
+                <input type="radio" name="social" value="instagram">Instagram
+                </label>
 
-                <label for="social2">Twitter</label>
-                <input type="radio" name="social" value="twitter">
+                <label for="social2">
+                <input type="radio" name="social" value="twitter">Twitter
+                </label>
 
-                <label for="social3">From a friend</label>
-                <input type="radio" name="social" value="friend">
+                <label for="social3">
+                <input type="radio" name="social" value="friend">From a friend
+                </label>
 
-                <label for="social4">In a commercial</label>
-                <input type="radio" name="social" value="commercial">
+                <label for="social4">
+                <input type="radio" name="social" value="commercial">In a commercial
+                </label>
 
-                <label for="social5">Other</label>
-                <input type="radio" name="social" value="other">
+                <label for="social5">
+                <input type="radio" name="social" value="other">Other
+                </label>
             </div>
             
             <div>
                 <h1>Favorite toppings?</h1>
-                <label for="topping1">Pepperoni</label>
-                <input type="checkbox" value="instagram">
+                <label for="topping1">
+                <input type="checkbox" value="pepperoni">Pepperoni</label>
 
-                <label for="topping2">Cheese</label>
-                <input type="checkbox" value="cheese">
+                <label for="topping2">
+                <input type="checkbox" value="cheese">Cheese</label>
 
-                <label for="topping3">Pineapple</label>
-                <input type="checkbox" value="pineapple">
+                <label for="topping3">
+                <input type="checkbox" value="pineapple">Pineapple</label>
 
-                <label for="topping4">Sausage</label>
-                <input type="checkbox" value="commercial">
+                <label for="topping4">
+                <input type="checkbox" value="commercial">Sausage</label>
 
-                <label for="topping5">Mushrooms</label>
-                <input type="checkbox" value="mushrooms">
+                <label for="topping5">
+                <input type="checkbox" value="mushrooms">Mushrooms</label>
 
-                <label for="topping5">Chicken</label>
-                <input type="checkbox" value="chicken">
+                <label for="topping5">
+                <input type="checkbox" value="chicken">Chicken</label>
             </div>
 
             <h1>Comments, questions or concens?</h1>
